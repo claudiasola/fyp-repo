@@ -109,19 +109,19 @@ def locateBoundaries(x, y):
 def setBaseValuation(x):
 
 	pdf = computePDF(x);
-	linePDF, = plt.plot(x, pdf,'k', linewidth=2.0, label="PDF");
+#	linePDF, = plt.plot(x, pdf,'k', linewidth=2.0, label="PDF");
 
 	normalised_pdf = normalisePDF(pdf);
-	lineNormalisedPDF, = plt.plot(x, normalised_pdf, 'r', label="normalised PDF");
+#	lineNormalisedPDF, = plt.plot(x, normalised_pdf, 'r', label="normalised PDF");
 	
 	cdf = computeCDF(x);
-	lineCDF, = plt.plot(x, cdf, 'b', linewidth=2.0, label="CDF");
+#	lineCDF, = plt.plot(x, cdf, 'b', linewidth=2.0, label="CDF");
 
 	normalised_cdf = normaliseCDF(cdf);
-	lineNormalisedCDF, = plt.plot(x, normalised_cdf, 'c', label="normalised CDF");
+#	lineNormalisedCDF, = plt.plot(x, normalised_cdf, 'c', label="normalised CDF");
 
 	unironed = - x - (normalised_cdf/normalised_pdf);
-	line, = plt.plot(x, unironed, 'y', linewidth=2.0, label="unironed");
+#	line, = plt.plot(x, unironed, 'y', linewidth=2.0, label="unironed");
 
 	return unironed;
 
