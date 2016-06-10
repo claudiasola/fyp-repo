@@ -1,6 +1,6 @@
 #!/bin/bash
 
-agent_num=5
+agent_num=$1
 seed=1000
 lower=3
 upper=9
